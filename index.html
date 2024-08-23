@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task Chaus</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/Coca-Cola_logo_white 1.png" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="burger-icon"></div>
+            <div class="burger-popup ">
+                    <a href="#main">Main</a>
+                    <a href="#about">About</a>
+                    <a href="#product">Product</a>
+                    <a href="#contacts">Contacts</a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="nav-btns">
+        <button class="nav-btn nav-btn--prev" type="button" disabled>
+            <img src="./img/Arrow 2.svg"/>
+        </button>
+        <button class="nav-btn nav-btn--next" type="button">
+            <img src="./img/Arrow 2.svg"/>
+        </button>
+        
+    </nav>
+
+    <main class="page-slider swiper"> 
+        
+
+        
+        <div class="swiper-wrapper">
+            <section class="swiper-slide section santa" style="background-image: url(./img/dedcoca\ 2.png);">
+                <div class="container">
+                    <div class="hero-name">
+                        <h1>Main Site Title</h1>
+                        <h3>Lorem ipsum descripsum</h3>
+                        <a class="btn" href="">Call to action</a>
+                    </div>
+                    <div class="hero-cloud hidden">
+                        <img src="./img/Cloud.png" alt="Cloud">
+                        <p>How how how !!!<br>
+                            Like it? <br>
+                            Scroll down for more !</p>
+                    </div>
+                    <div class="snowflake">
+                        <img src="./img/snowy.png" alt="snowflake">
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="swiper-slide section" style="background-image: url(./img/second-bg.png);">
+                <div class="container">
+                    <div class="hero-name">
+                        <h2>At least somewhere you can feel new year atmosphere</h2>
+                        <h3>Choose your present:</h3>
+                        <nav class="tabs-items">
+                            <a href="#tab_01" class="tabs-item" data-tab="tab_01"><img src="./img/new-year-sock 1.png" alt="new-year-sock"></a>
+                            <a href="#tab_02" class="tabs-item" data-tab="tab_02"><img src="./img/new-year-bag 1.png" alt=new-year-bag"></a>
+                            <a href="#tab_03" class="tabs-item" data-tab="tab_03"><img src="./img/caps-2 1.png" alt="caps"></a>
+                        </nav>
+                        
+                        
+                    </div>
+                    <div class="content">
+                        <div class="tabs-body">
+                            <div id="tab_01" class="tabs-block active" >
+                                <div class="text-item">
+                                    <h2>Best sock ever</h2>
+                                    <p>Reuglar sock have no <br>
+                                        present inside<br>
+                                        Lorem Ipsum is simply dumm  y text of the printing and types etting industry. Lorem <br>
+                                    </p>
+                                </div>
+                                    <img src="./img/new-year-sock 1.png" alt="new-year-sock">
+                            </div>
+                            <div id="tab_02" class="tabs-block" >
+                                <div class="text-item">
+                                    <h2>Best mishok ever</h2>
+                                    <p>Reuglar sock have no <br>
+                                        present inside<br>
+                                        Lorem Ipsum is simply dumm  y text of the printing and types etting industry. Lorem <br>
+                                    </p>
+                                </div>
+                                <img src="./img/new-year-bag 1.png" alt="new-year-sock">
+                            </div>
+                            <div id="tab_03" class="tabs-block" >
+                                <div class="text-item">
+                                    <h2>Best shapka ever</h2>
+                                    <p>Reuglar sock have no <br>
+                                        present inside<br>
+                                        Lorem Ipsum is simply dumm  y text of the printing and types etting industry. Lorem <br>
+                                    </p>
+                                </div>
+                                <img src="./img/caps-2 1.png" alt="new-year-sock">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="swiper-slide section" style="background-image: url(./img/merry-christmas-xmas-night-christmas-reindeer-artwork-happy-new-year\ 1.png);">
+                <div class="container">
+                        <div class="form-container">
+                            <h2>Write us<br>for real presents</h2>
+                            <div class="form-row">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Phone">
+                            </div>
+                            <div class="form-row">
+                                <select>
+            <option value="" disabled selected>Gender</option>
+            <option value="boy">Boy</option>
+            <option value="girl">Girl</option>
+            <option value="helicopter">Apache helicopter</option>
+        </select>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form-row full-width">
+                                <input type="text" placeholder="Your wish">
+                            </div>
+                            <div class="form-row checkbox-row">
+                                <label>
+                                    <input type="checkbox" class="checkbox">
+                                    Want Coca-cola with present?
+                                </label>
+                            </div>
+                        </div>                  
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- <footer>
+        <p>123</p>
+    </footer> -->
+    <script src="./js/index.js"></script>
+    <script src="./js/modules/swiper.min.js"></script>
+</body>
+</html>

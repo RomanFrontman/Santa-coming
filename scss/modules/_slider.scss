@@ -1,0 +1,86 @@
+.page-slider {
+    @media (min-width: 1025px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-wrapper {
+        @media (max-width: 1024px) {
+            display: block;
+            height: auto;
+            transform: none !important;
+        }
+    }
+}
+
+.section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1025px) {
+        height: 100vh;
+    }
+
+    @media (max-width: 1024px) {
+        min-height: 100vh;
+    }
+   &.santa {
+    background-size: 1000px;
+    background-position: right bottom;
+
+    @media (max-width: 768px) {
+        background-size: 550px;
+        padding-top: 100px;
+        align-items: start;
+    }
+    }
+}
+
+
+.nav-btns {
+    display: none;
+
+    @media (min-width: 1025px) {
+        position: fixed;
+        top: 80%;
+        transform: translate(-50%) rotate(-90deg);
+        left: 50px;
+        z-index: 100;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+}
+
+.nav-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.3s opacity;
+
+    &:hover {
+        opacity: 0.85;
+    }
+
+    &[disabled] {
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.nav-btn--prev {
+    transform: rotate(-90deg)
+}
+
+.nav-btn--next {
+    transform: rotate(90deg)
+}

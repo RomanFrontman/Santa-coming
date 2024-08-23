@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $mainBg;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
